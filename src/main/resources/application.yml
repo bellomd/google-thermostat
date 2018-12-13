@@ -3,10 +3,10 @@ server:
 
 oauth2:
   client:
-    clientId: public-api-preview
-    clientSecret: 4HJGRffVR8xb3XdEUQpjgZ1VplJi6Xgw
-    scope: 'identity:read home.details:read home.operation:read home.operation:write'
-    grantType: password
+    clientId: your_client_id
+    clientSecret: your_client_secret
+    scope: your_scopes
+    grantType: your_grant_type
     accessTokenUri: https://auth.tado.com/oauth/token
   
 tado:
