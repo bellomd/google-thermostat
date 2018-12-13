@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+oauth2:
+  client:
+    clientId: public-api-preview
+    clientSecret: 4HJGRffVR8xb3XdEUQpjgZ1VplJi6Xgw
+    scope: 'identity:read home.details:read home.operation:read home.operation:write'
+    grantType: password
+    accessTokenUri: https://auth.tado.com/oauth/token
+  
+tado:
+  api:
+    userInfo: https://my.tado.com/api/v2/me
+    homeZonesInfo: https://my.tado.com/api/v2/homes/{home_id}/zones
+    zoneState: https://my.tado.com/api/v2/homes/{home_id}/zones/{zone_id}/state
+    overlay: https://my.tado.com/api/v2/homes/{home_id}/zones/{zone_id}/overlay 
+  
